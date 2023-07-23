@@ -1,8 +1,7 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import ItemDetail from "../ItemDetail/ItemDetail";
 import { useParams } from "react-router-dom";
-import { getProductos } from "../../../asynmock";
-
+import { getUnProducto } from "../../../asynmock";
 
 
 const ItemDetailContainer = () => {
@@ -12,7 +11,7 @@ const ItemDetailContainer = () => {
   const { idItem } = useParams();
 
   useEffect(() => {
-    getProducto(idItem)
+    getUnProducto(idItem)
       .then((res) => {
         setProducto(res);
         setLoading(false);
@@ -25,7 +24,7 @@ const ItemDetailContainer = () => {
       {loading ? (
         <p>Cargando...</p>
       ) : (
-        <ItemDetail producto={producto} />
+        <ItemDetail {...producto} />
       )}
     </>
   );

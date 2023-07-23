@@ -4,6 +4,7 @@ import NavBar from "./componentes/NavBar/NavBar";
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import "./App.css";
 
+
 const App = () => {
   return (
     <>
@@ -15,6 +16,8 @@ const App = () => {
       <Route path="/item/:idItem" element={<ItemDetailContainer />}/>
     </Routes>
     </BrowserRouter> 
+    
+
 
     {
 
