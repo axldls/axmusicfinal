@@ -15,6 +15,7 @@ const App = () => {
       <Route path="/item/:idItem" element={<ItemDetailContainer />}/>
     </Routes>
     </BrowserRouter> 
+
     {
 
     }

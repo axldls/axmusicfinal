@@ -9,24 +9,24 @@ export const getProductos = () => {
     return new Promise((res) => {
         setTimeout(() => {
             res(misProductos);
-        },2000)
-    })
+        }, 2000);
+    });
 }
 
 export const getUnProducto = (id) => {
-    return new Promise(resolve=> {
+    return new Promise((resolve) => {
         setTimeout(() => {
             const producto = misProductos.find(prod => prod.id === id);
             resolve(producto);
-        },2000)
-    })
+        }, 2000);
+    });
 }
 
 export const getProductosPorCategoria = (idCategoria) => {
-    return new Promise(resolve => {
-        setTimeout( ()=> {
+    return new Promise((resolve) => {
+        setTimeout(() => {
             const productosCategoria = misProductos.filter(prod => prod.idCat === idCategoria);
             resolve(productosCategoria);
-        }, 2000)
-    })
+        }, 2000);
+    });
 }

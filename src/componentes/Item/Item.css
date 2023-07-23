@@ -1,0 +1,43 @@
+/* Estilos para Item */
+.item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+  
+  .item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+  }
+  
+  .item img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+  }
+  
+  .item h3 {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  
+  .item p {
+    color: #555;
+  }
+  
+  .item button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .item button:hover {
+    background-color: #0056b3;
+  }
+  
