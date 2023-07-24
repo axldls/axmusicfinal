@@ -3,7 +3,6 @@ import ItemDetail from "../ItemDetail/ItemDetail";
 import { useParams } from "react-router-dom";
 import { getUnProducto } from "../../../asynmock";
 
-
 const ItemDetailContainer = () => {
   const [producto, setProducto] = useState({});
   const [loading, setLoading] = useState(true);

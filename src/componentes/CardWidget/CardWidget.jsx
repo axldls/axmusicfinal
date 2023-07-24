@@ -1,5 +1,4 @@
 import "./CardWidget.css"
-
 const CardWidget = () => {
 
     const imgCarrito = "https://cdn-icons-png.flaticon.com/512/5087/5087847.png"

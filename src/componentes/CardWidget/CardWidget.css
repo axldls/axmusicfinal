@@ -1,12 +1,5 @@
-/* Estilos para CartWidget */
-.cart-widget {
-    display: flex;
-    align-items: center;
-    color: #fff;
-    cursor: pointer;
-  }
-  
-  .cart-widget span {
-    margin-left: 5px;
-  }
-  
+
+.imgCarrito {
+  width: 34px;
+  height: 34px;
+}
