@@ -1,0 +1,40 @@
+/* Estilos para ItemDetail */
+.item-detail-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.item-detail-container img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+
+.item-detail-container .item-quantity-selector {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 100px;
+  margin: 10px auto;
+}
+
+.item-detail-container .item-quantity-selector button {
+  padding: 5px 10px;
+  font-size: 14px;
+  background-color: #f1f1f1;
+  border: none;
+  cursor: pointer;
+}
+
+.item-detail-container .add-item-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.item-detail-container .add-item-button:hover {
+  background-color: #0056b3;
+}
