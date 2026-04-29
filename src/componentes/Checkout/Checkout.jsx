@@ -17,6 +17,7 @@ const Checkout = () => {
     const [codigoPostal, setCodigoPostal] = useState("");
     const [error, setError] = useState("");
     const [ordenId, setOrdenId] = useState("");
+    const [totalPedido, setTotalPedido] = useState(0);
 
     const manejadorFormulario = (e) => {
         e.preventDefault();
