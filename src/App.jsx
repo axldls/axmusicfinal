@@ -1,6 +1,7 @@
 import ItemListContainer from "./componentes/ItemListContainer/ItemListContainer"
 import ItemDetailContainer from "./componentes/ItemDetailContainer/ItemDetailContainer"
 import NavBar from "./componentes/NavBar/NavBar";
+import Footer from "./componentes/Footer/Footer";
 import { Routes, Route, HashRouter } from 'react-router-dom';
 import { CarritoProvider } from "./componentes/Context/CarritoContext";
 import "./App.css";
@@ -20,6 +21,8 @@ const App = () => {
           <Route path="/cart" element={<Cart />} />
           <Route path="/checkout" element={<Checkout />} />
         </Routes>
+
+        <Footer />
       </CarritoProvider>
     </HashRouter>
   )

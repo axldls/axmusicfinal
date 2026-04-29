@@ -1,0 +1,150 @@
+/* CartItem.css */
+.cart-item {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 80px;
+  gap: 20px;
+  padding: 20px;
+  border-bottom: 1px solid #E8EEF7;
+  align-items: center;
+  transition: background-color 0.2s ease;
+}
+
+.cart-item:hover {
+  background-color: #F5F7FA;
+}
+
+.cart-item:last-child {
+  border-bottom: none;
+}
+
+.item-name {
+  display: flex;
+  align-items: center;
+}
+
+.product-name {
+  color: #0B3D6F;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.item-price,
+.item-quantity,
+.item-subtotal {
+  text-align: center;
+}
+
+.price-value,
+.subtotal-value {
+  color: #546E7A;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.qty-badge {
+  display: inline-block;
+  background-color: #E8EEF7;
+  color: #0B3D6F;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  min-width: 40px;
+  text-align: center;
+}
+
+.item-actions {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-remove {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.btn-remove:hover {
+  background-color: #FFEBEE;
+  transform: scale(1.2);
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 1024px) {
+  .cart-item {
+    grid-template-columns: 1.5fr 1fr 1fr 60px;
+  }
+
+  .item-quantity {
+    display: none;
+  }
+
+  .price-value,
+  .subtotal-value {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cart-item {
+    grid-template-columns: 1fr 1fr 50px;
+    gap: 12px;
+    padding: 16px;
+  }
+
+  .item-price,
+  .item-subtotal {
+    text-align: right;
+  }
+
+  .price-value {
+    display: none;
+  }
+
+  .subtotal-value {
+    font-size: 14px;
+    color: #4A90E2;
+  }
+
+  .qty-badge {
+    padding: 4px 8px;
+    font-size: 12px;
+    min-width: 30px;
+  }
+
+  .btn-remove {
+    font-size: 16px;
+    padding: 4px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cart-item {
+    grid-template-columns: 1fr 50px;
+    gap: 8px;
+    padding: 12px;
+  }
+
+  .product-name {
+    font-size: 13px;
+  }
+
+  .item-price,
+  .item-quantity,
+  .item-subtotal {
+    display: none;
+  }
+
+  .qty-badge {
+    padding: 4px 6px;
+    font-size: 11px;
+  }
+
+  .btn-remove {
+    font-size: 14px;
+  }
+}

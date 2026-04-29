@@ -1,21 +1,47 @@
 /* NavBar.css */
 header {
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
+  background-color: #0B3D6F;
+  color: #FFFFFF;
+  padding: 12px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 0 2px 8px rgba(11, 61, 111, 0.15);
+  flex-wrap: wrap;
+  gap: 16px;
 }
 
-/* NavBar.css */
-h1 {
-  margin: 0;
-  font-size: 24px;
-  font-family: "Arial", sans-serif;
+.navbar-logo {
   text-decoration: none;
-  font-size: 32px !important; /* Agrega !important para forzar el tamaño de fuente */
-  /* Agrega más estilos si es necesario */
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo h1 {
+  margin: 0;
+  font-size: 32px;
+  font-family: "Arial", sans-serif;
+  color: #FFFFFF;
+  animation: slideInLeft 1s ease;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+nav {
+  display: flex;
+  align-items: center;
 }
 
 nav ul {
@@ -23,40 +49,83 @@ nav ul {
   display: flex;
   margin: 0;
   padding: 0;
-}
-
-nav ul li {
-  margin-right: 20px;
+  gap: 30px;
 }
 
 nav ul li a {
-  color: #fff;
+  color: #E8EEF7;
   text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  padding: 6px 12px;
+  border-radius: 4px;
+  display: inline-block;
 }
 
-
-
-
 nav ul li a:hover {
-  color: #007bff;
+  color: #4A90E2;
+  background-color: rgba(74, 144, 226, 0.1);
 }
 
 nav ul li a.active {
-  color: #007bff;
+  color: #4A90E2;
   font-weight: bold;
+  background-color: rgba(74, 144, 226, 0.1);
+  border-bottom: 2px solid #4A90E2;
 }
 
-
-h1 {
-  font-size: 30px; 
-  animation: slideInLeft 1s ease;
-}
-
-@keyframes slideInLeft {
-  from {
-    transform: translateX(-100%);
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+  header {
+    padding: 10px 12px;
+    gap: 12px;
   }
-  to {
-    transform: translateX(0);
+
+  .navbar-logo h1 {
+    font-size: 24px;
+  }
+
+  nav ul {
+    gap: 16px;
+  }
+
+  nav ul li a {
+    font-size: 14px;
+    padding: 4px 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 8px 10px;
+    gap: 8px;
+  }
+
+  .navbar-logo {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .navbar-logo h1 {
+    font-size: 20px;
+  }
+
+  nav {
+    width: 100%;
+    justify-content: center;
+  }
+
+  nav ul {
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  nav ul li a {
+    font-size: 12px;
+    padding: 4px 8px;
   }
 }

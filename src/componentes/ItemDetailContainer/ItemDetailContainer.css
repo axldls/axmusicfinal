@@ -21,21 +21,30 @@
   .item-quantity-selector button {
     padding: 5px 10px;
     font-size: 14px;
-    background-color: #f1f1f1;
-    border: none;
+    background-color: #E8EEF7;
+    border: 1px solid #CBD2D9;
     cursor: pointer;
+    border-radius: 4px;
+    color: #2C3E50;
+    transition: background-color 0.3s ease;
+  }
+
+  .item-quantity-selector button:hover {
+    background-color: #D4DFF0;
   }
   
   .add-item-button {
-    background-color: #007bff;
+    background-color: #4A90E2;
     color: #fff;
     padding: 10px 20px;
     font-size: 16px;
     border: none;
     cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
   }
   
   .add-item-button:hover {
-    background-color: #0056b3;
+    background-color: #2D7FB1;
   }
   
