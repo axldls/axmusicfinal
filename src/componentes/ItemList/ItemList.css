@@ -67,7 +67,7 @@
 
 @media (max-width: 480px) {
   .contenedorProductos {
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    grid-template-columns: 1fr;
     gap: 10px;
     padding: 10px;
   }
